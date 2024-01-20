@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Login Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./assets/message.svg" type="image/x-icon" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -21,6 +22,18 @@
     <script defer src="js/main.js"></script>
   </head>
   <body>
+    <div class="succesfull">
+      <span>Muvaffaqiyatli kirish!</span>
+    </div>
+    <div class="modal">
+      <div class="exit">
+        <img src="./assets/close.svg" alt="exit" width="20px" />
+      </div>
+      <p>Siz kiritayotgan kalitda:</p>
+      <span>Kamida 1 ta Katta harf</span><span>Kamida 1 ta raqam</span
+      ><span>Kamida 1 ta simvol <strong> [ !@#$%^&*()_+/\-= ]</strong></span>
+      <p>qatnashishi shart</p>
+    </div>
     <header>
       <div class="container">
         <span>Знакомства по всему миру</span>
@@ -64,7 +77,7 @@
               <img class="show-icon" src="./assets/show-pass.svg" alt="" />
             </div>
           </div>
-          <button>Войти</button>
+          <button class="login-btn">Войти</button>
           <a href="#">Я не помню пароль</a>
         </form>
       </div>
