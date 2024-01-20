@@ -11,6 +11,16 @@ const successModal = document.querySelector(".succesfull");
 let regex =
   /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{}|;:'",.<>?/]).{8,}$/;
 
+showIcon.addEventListener("click", () => {
+  if (passwordInput.type === "password") {
+    showIcon.src = "../assets/eye.svg";
+    passwordInput.type = "text";
+  } else {
+    showIcon.src = "../assets/show-pass.svg";
+    passwordInput.type = "password";
+  }
+});
+
 loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
   if (regex.test(passwordInput.value)) {
